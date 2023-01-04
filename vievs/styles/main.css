@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root{
+    --firstColor : rgb(52,225,225);
+    --secoundColor: rgb(52, 235, 110);
+    --bg1Color: rgb(35, 35, 35);
+    --bg2Color: rgb(44, 44, 44);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background: linear-gradient(270deg, var(--bg1Color), var(--bg2Color));
+}
+
+.loginIcon{
+    height: 150px;
+    width: 150px;
+    border: solid 5px rgba(255, 255, 255, 0.55);
+    border-radius: 100%;
+    box-shadow: 0 8 25px rgba(20, 20, 20, 0.1);
+    margin: 1.5rem auto 3.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.loginIcon:before{
+    background: rgba(255, 255, 255, 0.6);
+    bottom: -1.4rem;
+    border-radius: 70%;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 70px;
+}
+.loginIcon:after{
+    background: rgba(255, 255, 255, 0.6);
+    bottom: 40%;
+    border-radius: 60%;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 70px;
+    left: 50%;
+    height: 70px;
+    transform: translateX(-50%);
+}
+
+#box{
+    text-align: center;
+    height: 45rem;
+    width: 40rem;
+    align-items: center;
+    background-color: rgba(20, 20, 20, 0.5);
+    margin: 6rem auto;
+    padding: 5vh;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgb(32, 32, 32);
+    backdrop-filter: blur(10px);
+}
+
+h1{
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+}
+
+label{
+    position: absolute;
+    left: 50%;
+    transform: translate(-14rem, 0.2rem);
+    font-weight: bold;
+    font-size: 2rem;
+    opacity: 50%;
+    transition:  left 500ms, opacity 500ms;
+}
+
+input{
+    width: 90%;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+    background-color: rgba(20, 20, 20, 0.1);
+    outline: none;
+    border: solid 2px var(--firstColor);
+    border-radius: 15px;
+    box-shadow: 10px 5px 15px var(--bg2Color);
+    transition: transform 500ms;
+}
+
+input:hover,
+input:active{
+    transform: scale(1.1);
+}
+
+input:focus +  label{
+    left: 80rem;
+    opacity: 0%;
+}
+
+button{
+    padding: 0.8rem;
+    background: linear-gradient(to bottom, var(--firstColor), var(--secoundColor));
+    width: 13rem;
+    border-radius: solid 1px rgba(255,255,255,0.2);
+    font-size: 2rem;
+    color: var(--bg1Color);
+    transition: transform 500ms;
+    border-radius: 15px;
+    margin-top: 1rem;
+    margin-left: 50%;
+    justify-content: end;
+    box-shadow: 2px 5px 10px rgba(52, 235, 110,0.3);
+    border: none;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.formSpacer{
+    background: rgba(255, 255, 255, 0.55);
+    height: 2px;
+    margin: 2rem auto 2rem;
+    width: 80%;
+    border-radius: 100%;
+}
+
+#checkBoxDiv label{
+    font-size: 1rem;
+    top: 0;
+    right: 0;
+}
+
+#checkBoxDiv input[type=checkbox]{
+    width: 25px; height: 25px;
+    line-height: 60px;
+    text-align: center;
+    padding: 2rem;
+    border: 0;
+    margin-right: 5rem;
+}
+
+#checkBoxDiv{
+    position: relative;
+    width: 80%;
+    margin: auto;
+}

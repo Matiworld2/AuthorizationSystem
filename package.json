@@ -1,0 +1,17 @@
+{
+    "name": "4line",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "keywords": [],
+    "author": "Mateusz Konicki",
+    "license": "MIT",
+    "dependencies": {
+        "@okta/jwt-verifier": "^1.0.0",
+        "cookie-parser": "^1.4.6",
+        "express-session": "^1.17.3"
+    }
+}
