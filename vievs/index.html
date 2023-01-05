@@ -4,25 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Index</title>
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-    <div id="box">
-        <form action="/user" method="post">
-            <div class="loginIcon"></div>
-            <div class="inputDiv">
-                <input type="text" name="username" placeholder="">
-                <label for="username">username</label>
-            </div>
-            <div class="inputDiv">
-                <input type="password" name="password" placeholder="">
-                <label for="password">password</label>
-            </div>
-            <div class="formSpacer"></div>
-            <button type="submit" value="LogIn">login in</button>
-        </form>
-    </div>
+    <header>
+        <div id="logoDiv"><img src="styles/logo do strony.png" alt="logo"></div>
+        <div id="headerDiv">        
+            <nav></nav>
+            <ul id="SignUpIn">
+                <li><a href="login.html">Login in</a></li>
+                <li><a href="register.html">Sign up</a></li>
+            </ul>
+        </div>
+    </header>
 </body>
 </html>

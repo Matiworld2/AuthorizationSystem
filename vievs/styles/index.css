@@ -1,0 +1,40 @@
+img{
+    width: 8rem;
+    height: 8rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(16, 16, 16, 0.3);
+    height: 8rem;
+    box-shadow: 2px 2px 24px var(--firstColor);
+    position: sticky;
+}
+
+#headerDiv{
+    margin: auto 1rem auto auto;
+}
+
+#SignUpIn{
+    display: flex;
+    gap: 0.5vw;
+    list-style: none;
+}
+
+li{
+    background-color: rgba(16, 16, 16, 0.3);
+    padding: 1rem;
+    width: 6rem;
+    text-align: center;
+    border-radius: 15px;
+    border: solid 1px var(--firstColor);
+    background: linear-gradient(90deg,var(--firstColor),var(--secoundColor));
+}
+
+li a{
+    text-decoration: none;
+    font-weight: 1.5rem;
+    font-weight: bold;
+}
+

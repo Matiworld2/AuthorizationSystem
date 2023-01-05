@@ -1,0 +1,49 @@
+#box{
+    width: 40rem;
+    align-items: center;
+    background-color: rgba(20, 20, 20, 0.5);
+    margin: 6rem auto;
+    padding: 5vh;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgb(20, 22, 22);
+    backdrop-filter: blur(10px);
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+form{
+    margin: auto;
+}
+
+.longInput{
+    width: 90%;
+    padding: 1rem;
+    margin: 2rem 5% auto 5%;
+    background-color: rgba(20, 20, 20, 0.1);
+    border: solid 2px var(--firstColor);
+    border-radius: 15px;
+    box-shadow: 10px 5px 15px var(--bg2Color);
+    transition: transform 500ms;
+    font-size: 1rem;
+}
+
+.shortInputDiv{
+    width: 90%;
+}
+
+.shortInput{
+    width:40%;
+    padding: 1rem;
+    background-color: rgba(20, 20, 20, 0.1);
+    border: solid 2px var(--firstColor);
+    border-radius: 15px;
+    box-shadow: 10px 5px 15px var(--bg2Color);
+    font-size: 1rem;
+    margin: 2rem 4% 0.5rem;
+    box-shadow: 3px 2px 5px var(--bg2Color);
+
+}

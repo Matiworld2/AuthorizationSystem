@@ -2,9 +2,9 @@
     "name": "4line",
     "version": "1.0.0",
     "description": "",
-    "main": "server.js",
+    "main": "app.js",
     "scripts": {
-        "start": "node server.js"
+        "start": "nodemon server.js"
     },
     "keywords": [],
     "author": "Mateusz Konicki",
@@ -12,6 +12,9 @@
     "dependencies": {
         "@okta/jwt-verifier": "^1.0.0",
         "cookie-parser": "^1.4.6",
-        "express-session": "^1.17.3"
+        "express-session": "^1.17.3",
+        "knex": "^2.3.0",
+        "mysql2": "^2.3.3",
+        "objection": "^3.0.1"
     }
 }

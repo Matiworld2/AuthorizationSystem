@@ -30,9 +30,9 @@ app.use(express.static('vievs'));
 app.get('/', (req, res)=> {
     session=req.session;
     if(session.userid){
-        res.send("Hello world!")
+        res.send('vievs/index.html')
     }else
-    res.sendFile('vievs/index.html',{root:__dirname})
+    res.sendFile('vievs/login.html',{root:__dirname})
 });
 
 app.post('/user',(req,res) => {
@@ -40,7 +40,7 @@ app.post('/user',(req,res) => {
         session=req.session;
         session.userid=req.body.username;
         console.log(req.session)
-        res.send(`Hey there, welcome <a href=\'/logout'>click to logout</a>`);
+        res.sendFile(`Hey there, welcome <a href=\'/logout'>click to logout</a>`);
     }
     else{
         res.send('Invalid username or password');
